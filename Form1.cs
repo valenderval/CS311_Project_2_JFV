@@ -12,7 +12,7 @@ namespace CS311_Project_2_JFV
         public frmMain()
         {
             InitializeComponent();
-        }
+        }//end frmMain
 
         private void btnRoll_Click(object sender, EventArgs e)
         {
@@ -24,7 +24,7 @@ namespace CS311_Project_2_JFV
             {
                 calculateScore();
             }
-        }
+        }//end roll
 
         private void calculateScore()
         {
@@ -78,14 +78,12 @@ namespace CS311_Project_2_JFV
                 }
             }
             txtBet.Clear();
-        }   
+        }   // end calculateScore
 
         private void txtBet_TextChanged(object sender, EventArgs e)
         {
             
-           
-            
-        }
+        }//end txtBet_txtChanged
 
     }//end main
 }//end Namespace
