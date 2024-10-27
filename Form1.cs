@@ -40,13 +40,13 @@ namespace CS311_Project_2_JFV
             if (sum == 7 || sum == 11)
             {
                 lblResult.Text = "You win!";
-                currentBank += currentBet + 10; // Add money to bank
+                currentBank += 10; // Add money to bank
                 lblBank.Text = "Bank: " + currentBank;
             }
             else if (sum == 2 || sum == 3 || sum == 12)
             {
                 lblResult.Text = "You lose!";
-                currentBank -= currentBet; // Subtract money from bank
+                currentBank -= 10; // Subtract money from bank
                 lblBank.Text = "Bank: " + currentBank;
             }
             else
@@ -64,14 +64,14 @@ namespace CS311_Project_2_JFV
                     if (sum == point)
                     {
                         lblResult.Text = "You win!";
-                        currentBank += currentBet + 10; // Add money to bank
+                        currentBank += 10; // Add money to bank
                         lblBank.Text = "Bank: " + currentBank;
                         gameContinues = false;
                     }
                     else if (sum == 7)
                     {
                         lblResult.Text = "Craps! You lose!";
-                        currentBank -= currentBet; // Subtract money from bank
+                        currentBank -= 10; // Subtract money from bank
                         lblBank.Text = "Bank: " + currentBank;
                         gameContinues = false;
                     }
